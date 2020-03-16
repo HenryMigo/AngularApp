@@ -1,6 +1,8 @@
 # Todo App
 The purpose of this project is just to get used to Angular for personal use.
 
+# Master status - ![Node.js CI](https://github.com/HenryMigo/AngularApp/workflows/Node.js%20CI/badge.svg)
+
 # Change log
 
 ## 10/03/2020
