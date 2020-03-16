@@ -1,9 +1,8 @@
 /* tslint:disable:no-unused-variable */
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { By } from '@angular/platform-browser';
-import { DebugElement } from '@angular/core';
 
 import { TodoComponent } from './todo.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('TodoComponent', () => {
   let component: TodoComponent;
@@ -11,7 +10,8 @@ describe('TodoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TodoComponent ]
+      declarations: [ TodoComponent ],
+      imports: [HttpClientTestingModule]
     })
     .compileComponents();
   }));

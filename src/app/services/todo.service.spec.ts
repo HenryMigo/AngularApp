@@ -1,4 +1,5 @@
 /* tslint:disable:no-unused-variable */
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { TestBed, async, inject } from '@angular/core/testing';
 import { TodoService } from './todo.service';
@@ -6,7 +7,8 @@ import { TodoService } from './todo.service';
 describe('Service: Todo', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [TodoService]
+      providers: [TodoService],
+      imports: [ HttpClientTestingModule ]
     });
   });
 
