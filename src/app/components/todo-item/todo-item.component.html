@@ -1,4 +1,4 @@
-<div [ngClass]="setClasses()">
+<div class="main" [ngClass]="setClasses()">
   <input (change)="onToggle(todo)" type="checkbox" [checked]="todo.completed"/>
   <p>{{ todo.title }}</p>
   <button (click)="onDelete(todo)" class="del">x</button>
