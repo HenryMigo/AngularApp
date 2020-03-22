@@ -8,11 +8,10 @@ import { Observable } from 'rxjs';
 })
 export class TodoService {
   todosUrl = 'https://jsonplaceholder.typicode.com/todos';
-  todosLimit = '?_limit=10';
 
   constructor(private http: HttpClient) { }
 
   getTodos(): Observable<Todo[]> {
-    return this.http.get<Todo[]>(`${this.todosUrl}${this.todosLimit}`);
+    return this.http.get<Todo[]>(`${this.todosUrl}`);
   }
 }
